@@ -1,0 +1,23 @@
+# MPRS
+**MPRS（マピルス）** とは、主な概念的道具を並べたものである。
+
+- M
+    - メソッド(Method)
+    - モデル(Model)
+    - マインド(Mind)
+    - マトリクス(Matrix)
+- P
+    - プロセス(Process)
+    - プラクティス(Practice)
+    - プリンシプル(Principle)
+    - パターン(Pattern)
+- R
+    - ルール(Rule)
+    - ロール(Role)
+    - ランク(Rank)
+    - レート(Rate)
+- S
+    - ストラクチャー(Structure)
+    - ストラテジー(Strategy)
+    - スタンダード(Standard)
+    - スタンス(Stance)

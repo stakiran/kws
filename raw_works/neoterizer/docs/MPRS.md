@@ -1,0 +1,24 @@
+# MPRS
+# 主な[🙏仕事術](🙏仕事術.md)（の種類）を挙げたもの。
+# 読み方は「マピルス」。
+
+- M
+    - メソッド(Method)
+    - モデル(Model)
+    - マインド(Mind)
+    - マトリクス(Matrix)
+- P
+    - プロセス(Process)
+    - プラクティス(Practice)
+    - プリンシプル(Principle)
+    - パターン(Pattern)
+- R
+    - ルール(Rule)
+    - ロール(Role)
+    - ランク(Rank)
+    - レート(Rate)
+- S
+    - ストラクチャー(Structure)
+    - ストラテジー(Strategy)
+    - スタンダード(Standard)
+    - スタンス(Stance)

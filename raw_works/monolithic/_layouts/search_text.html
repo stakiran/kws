@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+      <style type="text/css">
+  #searchbox {
+    margin-top: 16px;
+  }
+    </style>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+      var countee_selector = '#content p, #content li, #content pre, #content h1, #content h2, #content h3, #content h4';
+
+      $(function(){
+          $('#searchbox').keyup(function(){
+              if (!$(this).val()) {
+                  var count = get_all_count();
+              } else {
+                  $(countee_selector).hide();
+                  var keywords = split_search_query(this.value);
+                  // AND search with space-delim.
+                  // No case-sensitive.
+                  var count = $(countee_selector).filter(function(){
+                      var text = $(this).text().toLowerCase();
+                      var are_all_included = true;
+                      for(var i=0; i<keywords.length; i++){
+                          var keyword = keywords[i].toLowerCase();
+                          if(text.indexOf(keyword) == -1){
+                              are_all_included = false;
+                              break;
+                          }
+                      }
+                      return are_all_included;
+                  }).show().length;
+              }
+              $('#item_count').text(count);
+          });
+          $('#searchbox').focus(function(){
+              $(this).select();
+          });
+
+          $("body").keypress(function(e){
+              var keycode = e.keyCode;
+              if(keycode == 27){ // Esc
+                  focus();
+                  return false; // break from this scope.
+              }
+          });
+
+          $('#item_count').text(get_all_count());
+          clear();
+          focus();
+      });
+      function clear(){
+          $('#searchbox').val('');
+      }
+      function focus(){
+          $('#searchbox').focus();
+      }
+      function get_all_count(){
+          return $(countee_selector).show().length;
+      }
+      function split_search_query(searchbox_value){
+          var delim = ' ';
+          var keywords = searchbox_value.split(delim);
+
+          // keywords = ['keyword1', '', 'keyword2']
+          //                         ^^
+          //                       remove this dusts.
+          //
+          for(var i=0; i<keywords.length; i++){
+            var v = keywords[i];
+            if(v==='' || v.indexOf(delim)!==-1){
+              keywords.splice(i, 1);
+              i = i - 1; // Consider the shift of the rest elements.
+            }
+          }
+
+          return keywords;
+      }
+      </script>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <div classs="search_area">
+      <input id="searchbox" type="text" size="20">
+      <p>Result:<strong id="item_count"></strong> items</p>
+    </div>
+    <hr>
+
+    <main id="content" class="main-content search_target_area" role="main">
+      {% include toc.html html=content ordered=true %}
+
+      {{ content }}
+
+      <span class="site-footer-credits">Back to <a href="{{ site.url }}">the toppage</a>.</span>
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Copyright (c) 2019 <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

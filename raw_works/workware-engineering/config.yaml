@@ -1,0 +1,22 @@
+title: "Workware Engineering"
+summary: "ワークウェア・エンジニアリング"
+topics: ["workware", "wwe"]
+published: true
+price: 0
+toc_depth: 2
+chapters:
+  - 0_about
+  - sep_overview
+  - 1_whatwhy
+  - 2_view
+  - 3_usecase
+  - 4_principle
+  - sep_workware_create
+  - c_spread_and_distill
+  - c_loneliness_and_slack
+  - c_competence
+  - c_notetaking
+  - sep_workware_search
+  - sep_workware_use
+  - sep_workware_share
+  - ref
