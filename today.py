@@ -1,7 +1,6 @@
 """Create today's daily page under wiki/ and open it in VSCode.
 
-Usage:
-    python .claude/skills/today/today.py
+Invoked from the VSCode task "today" (see .vscode/tasks.json).
 
 Behavior:
     - Compute today's date in yyyy-mm-dd (local time).
@@ -13,12 +12,6 @@ Behavior:
         - Do nothing to the filesystem (no edit, no overwrite).
     - Finally, open the target file in VSCode via `code <path>`.
     - Print one line of status: CREATED / EXISTS, plus the target path.
-
-Notes:
-    - Repo root is resolved as the script's parent at depth 3
-      (.claude/skills/today/ -> repo root).
-    - index.scb is expected to contain a line exactly matching "daily pages:".
-      If not found, the script aborts with a non-zero exit and prints an error.
 """
 
 import datetime
@@ -26,7 +19,7 @@ import pathlib
 import subprocess
 import sys
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]
+REPO_ROOT = pathlib.Path(__file__).resolve().parent
 WIKI_DIR = REPO_ROOT / "wiki"
 INDEX_PATH = WIKI_DIR / "index.scb"
 DAILY_PAGES_MARKER = "daily pages:"
