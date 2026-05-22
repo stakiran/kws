@@ -243,3 +243,6 @@ function fixInvalidFilename(filename: string) {
 ```
 
 また文中の🐰は私を示すアイコンであり、私のコメントを書いている。文頭に書いたり、文末に置いたり、行に置いた上でインデントにてぶら下げたりするが、いずれもその範囲が私のコメントであることを示す。
+
+## Claude Mention について
+.scb ファイル中の @claude 記法については .claude/rules/claude_mention.md を参照
