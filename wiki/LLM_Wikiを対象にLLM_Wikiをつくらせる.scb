@@ -1,0 +1,18 @@
+[LLM Wiki]の内容をLLM Wiki化したい
+ このページを index とみなして、関連する概念はここからリンクを張る形で別ページにする
+
+これでつくらせる
+ > @wiki/LLM_Wikiを対象にLLM_Wikiをつくらせる.scb に LLM Wiki そのもの解説をつくりたい。LLM Wikiの原典と動作方法は @raw/llm-wiki.md を見よ。理解できた？     
+
+---
+
+つくらせた内容: ここをindexとする
+ [LLM Wikiの核心思想]
+ [LLM Wikiのアーキテクチャ]
+ [LLM Wikiの操作]
+  [Ingest]
+ [LLM Wikiのナビゲーション用ファイル]
+ [LLM Wikiで使う道具]
+ [LLM Wikiの適用領域]
+ [LLM Wikiの公式TIPS]
+ [なぜLLM Wikiは機能するのか]

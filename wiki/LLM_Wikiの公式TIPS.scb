@@ -1,0 +1,32 @@
+LLM Wikiの公式TIPS
+
+[Obsidian Web Clipper]
+ Web記事をマークダウンに変換するブラウザ拡張
+ ソースを生のコレクションに素早く取り込むのに非常に有用
+
+画像をローカルにダウンロードする
+ Obsidian Settings → Files and links で「Attachment folder path」を固定ディレクトリ(例: `raw/assets/`)に設定する
+ Settings → Hotkeys で「Download」を検索して「Download attachments for current file」を見つけ、ホットキー(例: Ctrl+Shift+D)に割り当てる
+ 記事をクリップした後、ホットキーを押せば全ての画像がローカルディスクにダウンロードされる
+ これはオプションだが有用
+  LLMが切れる可能性のあるURLに頼るのではなく、画像を直接見て参照できる
+ 注意
+  LLMは画像が埋め込まれたマークダウンを一度には読めない
+  ワークアラウンドはまずテキストを読ませ、それから参照画像の一部または全てを別途見せて追加コンテキストを得るやり方
+  少し不格好だが十分動作する
+
+Obsidianのグラフビュー
+ wikiの形状を見る最良の方法
+ 何が何に繋がっているか、どのページがハブか、どれがorphanかが分かる
+
+[Marp]
+ マークダウンベースのスライドデッキフォーマット
+ Obsidianにプラグインがある
+ wiki内容から直接プレゼンテーションを生成するのに有用
+
+[Dataview]
+ ページfrontmatterに対してクエリを実行するObsidianプラグイン
+ LLMがwikiページにYAML frontmatter(タグ、日付、ソース数)を追加すれば、Dataviewは動的なテーブルとリストを生成できる
+
+wikiはマークダウンファイルのgitリポジトリにすぎない
+ バージョン履歴、ブランチ、コラボレーションが無料で手に入る

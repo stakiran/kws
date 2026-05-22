@@ -1,0 +1,27 @@
+LLM Wikiで使う道具
+
+オプション: CLIツール
+ ある時点で、LLMがwiki上でより効率的に操作するための小さなツールを構築したくなる
+ wikiページに対する検索エンジンが最も明白なもの
+  小規模ではindexファイルで十分
+  wikiが成長すると適切な検索が欲しくなる
+ [qmd](https://github.com/tobi/qmd)が良い選択肢
+  マークダウンファイルのためのローカル検索エンジン
+  ハイブリッドBM25/ベクトル検索とLLM再ランキング、全てオンデバイス
+  CLI(LLMがshell outできる)とMCPサーバー(LLMがネイティブツールとして使える)の両方を持つ
+ もっとシンプルなものを自分で構築することも可能
+  必要に応じてLLMが素朴な検索スクリプトをvibe-codeするのを助けてくれる
+
+[Obsidian]
+ wikiを編集・閲覧するためのIDE的な存在
+
+[Obsidian Web Clipper]
+ 詳細は[LLM Wikiの公式TIPS]
+
+[Marp]
+ マークダウンベースのスライドデッキフォーマット
+ 詳細は[LLM Wikiの公式TIPS]
+
+[Dataview]
+ ページのfrontmatterに対してクエリを実行するObsidianプラグイン
+ 詳細は[LLM Wikiの公式TIPS]
