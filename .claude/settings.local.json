@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Edit(wiki/**/*.scb)",
+      "Write(wiki/**/*.scb)"
+    ]
+  }
+}
