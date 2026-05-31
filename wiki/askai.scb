@@ -1,0 +1,8 @@
+https://github.com/stakiran/tools/tree/master/askai
+
+Ask AIの略でaskai
+ markdown ファイルを開いた状態で呼び出すと、その続きを LLM に問い合わせて追記までする
+ 要はテキストエディタからシームレスにしただけ🐰
+
+上記は vscode 用だけど、俺は秀丸用を使ってる
+ 今見たら公開してないな、まあいいか
