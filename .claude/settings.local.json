@@ -2,9 +2,9 @@
   "permissions": {
     "allow": [
       "WebSearch",
+      "WebFetch",
       "Edit(wiki/**/*.scb)",
-      "Write(wiki/**/*.scb)",
-      "WebFetch(domain:www.ibm.com)"
+      "Write(wiki/**/*.scb)"
     ]
   }
 }
