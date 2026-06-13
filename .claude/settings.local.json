@@ -3,7 +3,8 @@
     "allow": [
       "WebSearch",
       "Edit(wiki/**/*.scb)",
-      "Write(wiki/**/*.scb)"
+      "Write(wiki/**/*.scb)",
+      "WebFetch(domain:www.ibm.com)"
     ]
   }
 }

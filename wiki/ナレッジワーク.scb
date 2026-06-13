@@ -1,0 +1,98 @@
+ナレッジワーク（knowledge work）の原義を調べたメモ
+
+結論から
+ 原義としては「ナレッジワーカー（knowledge worker）」が先で、その営みを指す名詞が「ナレッジワーク（knowledge work）」である
+ どちらも Peter Drucker（ピーター・ドラッカー）による造語・概念
+ 初出は 1959 年の著書 [The Landmarks of Tomorrow]（邦題『変貌する産業社会』『明日のための思想』など）
+
+誰がいつ
+ 経営学者 Peter Drucker が 1959 年に knowledge worker という語を生んだ
+ ホワイトカラー労働の新しい段階として提示した
+ 当時はまだ肉体労働（manual worker / blue-collar）が主流で、その対概念として打ち出した
+
+原義としての定義
+ 正規の教育・訓練を通じて獲得した理論的・分析的な知識を適用し、製品やサービスを生み出す高度な労働者
+ 体を使う肉体労働ではなく、頭（知識・思考・分析）を使う労働
+ 知識そのものが生産手段であり、労働者自身がその知識を保有している点が古典的労働者と決定的に違う
+  道具や工場ではなく、本人の頭の中に資本がある
+
+ナレッジワーカー vs ナレッジワーク
+ ナレッジワーカー（knowledge worker）
+  知識を主たる資本として働く「人」
+ ナレッジワーク（knowledge work）
+  そのナレッジワーカーが行う「営み・労働」そのもの
+ つまり原義の系譜は worker（人）→ work（営み）の順
+
+Drucker が見ていた射程
+ 知識が基礎的な経済資源になる（土地・労働・資本に代わって）
+ 知識労働者が中心的な社会階層になる
+ 経済の最重要課題は「知識労働と知識労働者の生産性」になる
+  Drucker いわく、20 世紀の経営の最大の功績は肉体労働の生産性を約 50 倍にしたこと
+  そして「21 世紀に経営がなすべき最重要の貢献は、同じように知識労働と知識労働者の生産性を高めることだ」と述べた
+ 21 世紀の組織にとって最も価値ある資産は知識労働者である、と予言した
+
+🐰のための補足
+ ここで言う「原義のナレッジワーク」は、あくまで経営・生産性の文脈での「知識を使う労働」を指す
+ この kws リポジトリで言う「ナレッジワーク（新しい概念をつくる営み）」とは、力点がやや異なる
+  原義: 既存の知識を「適用」して成果（製品・サービス）を出す労働
+  この作業場: 新しい概念を「つくる」ことに力点を置いた営み
+ つまり原義は知識の「運用・適用」寄り、この作業場の用法は知識の「生成・創造」寄り、と整理できる
+
+--- 生産性・創造性について（研究とドラッカーの見解）
+
+ドラッカーは何と言っているか
+ 1999 年の論文 [Knowledge-Worker Productivity_ The Biggest Challenge]（『知識労働者の生産性: 最大の課題』）が決定版
+  彼自身、これを 21 世紀の経営の最重要テーマと位置づけた
+ ドラッカーが挙げた、知識労働者の生産性を決める 6 つの要因
+  1: 「タスクは何か？（What is the task?）」を問うことから始まる
+   肉体労働では作業は与えられるが、知識労働では「何をやるか」自体を定義することが仕事の中核
+  2: 生産性の責任を、知識労働者本人に負わせる。本人が自分をマネジメントし、自律性（autonomy）を持つ
+  3: 継続的なイノベーションを、仕事・タスク・責任の一部に組み込む
+  4: 継続的な「学び」と、同時に継続的な「教え」が必要
+  5: 生産性は、少なくとも第一義的には「量（quantity）」の問題ではない
+   → 量より質（quality）、効率より有効性（effectiveness）へ重心が移る
+  6: 知識労働者を「コスト」ではなく「資産（asset）」として見て、扱う
+ ドラッカーの根本認識
+  20 世紀に肉体労働の生産性を約 50 倍にした手法（テイラー的な作業分解・標準化）は、そのままでは知識労働には効かない
+  だから知識労働の生産性は、肉体労働とは別の枠組みで考え直す必要がある、という立場
+
+「そもそも測れるのか」問題
+ 測定が難しい、というのは研究上もほぼ共通認識
+  アウトプットが分野ごとに固有で、肉体労働のように標準化された尺度をつくりにくい
+  インプット（思考・知識の投入）も外から観測しにくい
+  「単位時間あたりの産出量」で測ると、質や、それが生んだ結果（results）を無視してしまう
+ ただし「完全に測れない」かは論争がある
+  論文 [Knowledge worker productivity_ is it really impossible to measure it_] のように、不可能ではないと反論する立場もある
+  実務側（Atlassian など）は「労働生産性メトリクスは、アイデアを生む仕事には時代遅れで逆効果」と批判
+ 自己申告の生産性は、感情・気分・仕事への態度といった情緒的要因に強く影響される、という知見もある
+  → つまり客観量だけでなく、本人の主観状態が無視できない
+
+創造性との関係
+ 創造性（creativity）は、生産性の枠組みでは特に測りにくいとされる
+  ツールを増やしてもアイデアの質はほとんど上がらない＝生産性指標は創造性を測れない、という指摘
+  創造的な仕事では、創造性を育むことなしに「生産的」にはなれず、しかもそれは 1 日単位で測れない
+ 整理すると
+  量的生産性（効率）と、質的・創造的な成果は、別の軸として扱うべき
+  ナレッジワークの「価値」の本体は後者（質・創造）にあるが、測りやすいのは前者（量・効率）という非対称がある
+
+🐰 のための含意
+ この作業場（新しい概念をつくる営み）は、ドラッカーの言う「質・有効性・継続的イノベーション」側に思いきり寄っている
+ だから「何ページ書いた」「何時間やった」式の量的生産性で自分を測ると、本質を取りこぼしやすい
+ むしろドラッカーの 6 要因のうち、1（タスクは何かを問う）・3（イノベーションを仕事に組み込む）・5（量より質）あたりが、この作業場の評価軸として相性が良い
+ 「測れないものをどう扱うか」は未解決の論点として残る。測る代わりに、測れないことを前提にした営み方（[Knowledge Play] のような遊びの導入など）の方が筋が良いかもしれない
+
+参照元
+ What is a knowledge worker and what do they do?（IBM）
+  https://www.ibm.com/think/topics/knowledge-worker
+ The Landmarks of Tomorrow（Wikipedia）
+  https://en.wikipedia.org/wiki/The_Landmarks_of_Tomorrow
+ Peter Drucker（Wikipedia）
+  https://en.wikipedia.org/wiki/Peter_Drucker
+ The Future of Knowledge Work: What Drucker can teach us
+  https://mlari.ciam.edu/the-future-of-knowledge-work-what-drucker-can-teach-us
+ Knowledge-Worker Productivity: The Biggest Challenge（Peter F. Drucker, 1999, California Management Review）
+  https://journals.sagepub.com/doi/10.2307/41165987
+ Knowledge worker productivity: is it really impossible to measure it?（ResearchGate）
+  https://www.researchgate.net/publication/328379110
+ The problem with productivity metrics（Atlassian）
+  https://www.atlassian.com/blog/productivity/the-problem-with-productivity-metrics
